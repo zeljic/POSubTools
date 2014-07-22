@@ -2,6 +2,6 @@ before_install: java -version
 language: java
 jdk:
   - oraclejdk8
-  - openjdk8
+  - openjdk7
 install:
   - mvn clean package assembly:single
