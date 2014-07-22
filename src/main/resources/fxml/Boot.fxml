@@ -1,7 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="300.0" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" stylesheets="@../styles/boot.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <MenuItem mnemonicParsing="false" text="Open Subtitle">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="O" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="Save Subtitle" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                    <MenuItem mnemonicParsing="false" text="Exit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Action">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Run" />
+                        <MenuItem mnemonicParsing="false" text="Reset Fields" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Options" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar>
+               <items>
+                  <Button mnemonicParsing="false" text="Open Subtitle" />
+                  <Button mnemonicParsing="false" text="Save Subtitle" />
+                  <Separator orientation="VERTICAL" />
+                  <Button mnemonicParsing="false" text="Run" />
+                  <Button mnemonicParsing="false" text="Reset" />
+                  <Separator orientation="VERTICAL" />
+                  <Button mnemonicParsing="false" text="Options" />
+                  <Pane />
+               </items>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ToolBar>
+            <SplitPane dividerPositions="0.5075075075075075" orientation="VERTICAL" prefHeight="160.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+              <items>
+                  <TableView minHeight="75.0">
+                    <columns>
+                      <TableColumn editable="false" prefWidth="50.0" resizable="false" sortable="false" text="#" />
+                      <TableColumn editable="false" prefWidth="100.0" sortable="false" text="Start" />
+                        <TableColumn editable="false" prefWidth="75.0" sortable="false" text="End" />
+                        <TableColumn editable="false" prefWidth="75.0" sortable="false" text="Duration" />
+                        <TableColumn editable="false" prefWidth="75.0" sortable="false" text="Length" />
+                        <TableColumn editable="false" prefWidth="75.0" sortable="false" text="Text" />
+                    </columns>
+                  </TableView>
+                  <TableView layoutX="10.0" layoutY="10.0" minHeight="75.0">
+                     <columns>
+                        <TableColumn editable="false" prefWidth="50.0" resizable="false" sortable="false" text="#" />
+                        <TableColumn editable="false" prefWidth="75.0" sortable="false" text="Start" />
+                        <TableColumn editable="false" prefWidth="75.0" sortable="false" text="End" />
+                        <TableColumn editable="false" prefWidth="75.0" sortable="false" text="Duration" />
+                        <TableColumn editable="false" prefWidth="75.0" sortable="false" text="Length" />
+                        <TableColumn editable="false" prefWidth="75.0" sortable="false" text="Text" />
+                     </columns>
+                  </TableView>
+              </items>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
