@@ -1,0 +1,41 @@
+#pToolBar{
+	TOP-COLOR: ladder(
+        -fx-base,
+        derive(-fx-base,0%) 0%,
+        derive(-fx-base,46%) 100%
+    );
+    -fx-background-color:
+        linear-gradient(to bottom, derive(TOP-COLOR,25%) 0%, -fx-outer-border 90%),
+        linear-gradient(to bottom, TOP-COLOR 2%, derive(-fx-base,-2.1%) 95%);
+		
+	-fx-background-insets: 0 0 0 0, 1 0 1 0;
+}
+
+#pInfoLine{
+    -fx-background-color: linear-gradient(to top, derive(-fx-base, 25%) 0%, -fx-outer-border 90%), -fx-base;
+	-fx-background-insets: 0 0 0 0, 1 0 1 0;
+}
+
+.icon-open{
+	-fx-graphic: url(../gfx/icons/icon-open.png);
+}
+
+.icon-save{
+	-fx-graphic: url(../gfx/icons/icon-save.png);
+}
+
+.icon-run{
+	-fx-graphic: url(../gfx/icons/icon-run.png);
+}
+
+.icon-reset{
+	-fx-graphic: url(../gfx/icons/icon-reset.png);
+}
+
+.icon-options{
+	-fx-graphic: url(../gfx/icons/icon-options.png);
+}
+
+.icon-layout{
+	-fx-graphic: url(../gfx/icons/icon-layout.png);
+}
