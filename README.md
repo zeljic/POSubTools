@@ -1,5 +1,6 @@
 Subtitle Merger 3.0
 ===============
+[![Build Status](https://travis-ci.org/zeljic/subtitle-merger.svg?branch=master)](https://travis-ci.org/zeljic/subtitle-merger)  
 
 Public port of Subtitle Merger project:  
 [Prijevodi Online](http://www.prijevodi-online.org/smf/index.php/topic,9341.0.html)  
