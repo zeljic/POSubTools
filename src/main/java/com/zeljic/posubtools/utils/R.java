@@ -1,4 +1,4 @@
-package com.zeljic.subtitlemerger.utils;
+package com.zeljic.posubtools.utils;
 
 import java.io.InputStream;
 import java.net.URL;

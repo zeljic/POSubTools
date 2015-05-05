@@ -1,4 +1,4 @@
-package com.zeljic.subtitlemerger.uil;
+package com.zeljic.posubtools.uil;
 
 import java.io.IOException;
 import java.net.URL;

@@ -1,4 +1,4 @@
-package com.zeljic.subtitlemerger.parser;
+package com.zeljic.posubtools.parser;
 
 public class SrtParser extends Parser
 {
